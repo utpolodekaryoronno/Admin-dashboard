@@ -15,7 +15,15 @@
      <link rel="stylesheet" href="assets/vendors/select2/select2.min.css">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="assets/vendors/fontawesome/css/fontaswesome.min.css">
-    
+    <!-- datepicker-autoclose -->
+    <link rel="stylesheet" href="assets/vendors/datepicker/bootstrap-datepicker.min.css">
+    <!-- datepicker range jquery plugin css -->
+    <link rel="stylesheet" href="assets/vendors/datepicker-plugin/daterangepicker.css">
+
+    <!-- fullcalendar css -->
+    <link href='assets/vendors/fullcalendar/packages/core/main.css' rel='stylesheet' />
+    <link href='assets/vendors/fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
+
     <!-- Custom Css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -227,7 +235,7 @@
                         <div class="header-desktop-search">
                             <input type="search" class="form-control" id="desk-search-id" placeholder="Search …" title="Search for:">
                             
-                            <button type="submit" class="desk-search-icon"><img src="assets/images/icons/search-dark-18.svg" alt=""></button>
+                            <button type="submit" class="gray-search-icon"><img src="assets/images/icons/search-gray-18.png" alt=""></button>
                         </div>
                         <!-- For Mobile Search -->
                         <div class="header-mobile-search">
@@ -1646,7 +1654,7 @@
                                         <div class="mb-3">
                                             <p class="fs-14px title2 mb-3">Solid Size Option</p>
                                             <div class="d-flex flex-column flex-wrap gap-3 card-border p-3">
-                                                <div class="d-flex align-item-center gap-3 border-bottom pb-3">
+                                                <div class="d-flex align-item-center flex-wrap gap-3 border-bottom pb-3">
                                                     <a href="#" class="btn ad-sm-btn-light">New</a>
                                                     <a href="#" class="btn ad-sm-btn-primary">New</a>
                                                     <a href="#" class="btn ad-sm-btn-success">New</a>
@@ -1655,7 +1663,7 @@
                                                     <a href="#" class="btn ad-sm-btn-danger">New</a>
                                                     <a href="#" class="btn ad-sm-btn-dark">New</a>
                                                 </div>
-                                                <div class="d-flex align-item-center gap-3 border-bottom pb-3">
+                                                <div class="d-flex align-item-center flex-wrap gap-3 border-bottom pb-3">
                                                     <a href="#" class="btn ad-md-btn-light">New</a>
                                                     <a href="#" class="btn ad-md-btn-primary">New</a>
                                                     <a href="#" class="btn ad-md-btn-success">New</a>
@@ -1664,7 +1672,7 @@
                                                     <a href="#" class="btn ad-md-btn-danger">New</a>
                                                     <a href="#" class="btn ad-md-btn-dark">New</a>
                                                 </div>
-                                                <div class="d-flex align-item-center gap-3">
+                                                <div class="d-flex align-item-center flex-wrap gap-3">
                                                     <a href="#" class="btn ad-lg-btn-light">New</a>
                                                     <a href="#" class="btn ad-lg-btn-primary">New</a>
                                                     <a href="#" class="btn ad-lg-btn-success">New</a>
@@ -1678,7 +1686,7 @@
                                         <div class="mb-3">
                                             <p class="fs-14px title2 mb-3">Outline Size Option</p>
                                             <div class="d-flex flex-column flex-wrap gap-3 card-border p-3">
-                                                <div class="d-flex align-item-center gap-3 border-bottom pb-3">
+                                                <div class="d-flex align-item-center flex-wrap gap-3 border-bottom pb-3">
                                                     <a href="#" class="btn outline-sm-btn-light">New</a>
                                                     <a href="#" class="btn outline-sm-btn-primary">New</a>
                                                     <a href="#" class="btn outline-sm-btn-success">New</a>
@@ -1687,7 +1695,7 @@
                                                     <a href="#" class="btn outline-sm-btn-danger">New</a>
                                                     <a href="#" class="btn outline-sm-btn-dark">New</a>
                                                 </div>
-                                                <div class="d-flex align-item-center gap-3 border-bottom pb-3">
+                                                <div class="d-flex align-item-center flex-wrap gap-3 border-bottom pb-3">
                                                     <a href="#" class="btn outline-md-btn-light">New</a>
                                                     <a href="#" class="btn outline-md-btn-primary">New</a>
                                                     <a href="#" class="btn outline-md-btn-success">New</a>
@@ -1696,7 +1704,7 @@
                                                     <a href="#" class="btn outline-md-btn-danger">New</a>
                                                     <a href="#" class="btn outline-md-btn-dark">New</a>
                                                 </div>
-                                                <div class="d-flex align-item-center gap-3">
+                                                <div class="d-flex align-item-center flex-wrap gap-3">
                                                     <a href="#" class="btn outline-lg-btn-light">New</a>
                                                     <a href="#" class="btn outline-lg-btn-primary">New</a>
                                                     <a href="#" class="btn outline-lg-btn-success">New</a>
@@ -1710,7 +1718,7 @@
                                         <div class="mb-3">
                                             <p class="fs-14px title2 mb-3">Light Size Option</p>
                                             <div class="d-flex flex-column flex-wrap gap-3 card-border p-3">
-                                                <div class="d-flex align-item-center gap-3 border-bottom pb-3">
+                                                <div class="d-flex align-item-center flex-wrap gap-3 border-bottom pb-3">
                                                     <a href="#" class="btn light-sm-btn-light">New</a>
                                                     <a href="#" class="btn light-sm-btn-primary">New</a>
                                                     <a href="#" class="btn light-sm-btn-success">New</a>
@@ -1719,7 +1727,7 @@
                                                     <a href="#" class="btn light-sm-btn-danger">New</a>
                                                     <a href="#" class="btn light-sm-btn-dark">New</a>
                                                 </div>
-                                                <div class="d-flex align-item-center gap-3 border-bottom pb-3">
+                                                <div class="d-flex align-item-center flex-wrap gap-3 border-bottom pb-3">
                                                     <a href="#" class="btn light-md-btn-light">New</a>
                                                     <a href="#" class="btn light-md-btn-primary">New</a>
                                                     <a href="#" class="btn light-md-btn-success">New</a>
@@ -1728,7 +1736,7 @@
                                                     <a href="#" class="btn light-md-btn-danger">New</a>
                                                     <a href="#" class="btn light-md-btn-dark">New</a>
                                                 </div>
-                                                <div class="d-flex align-item-center gap-3">
+                                                <div class="d-flex align-item-center flex-wrap gap-3">
                                                     <a href="#" class="btn light-lg-btn-light">New</a>
                                                     <a href="#" class="btn light-lg-btn-primary">New</a>
                                                     <a href="#" class="btn light-lg-btn-success">New</a>
@@ -2570,7 +2578,356 @@
                                                 </button>
                                             </div>
                                          </div>
+
+                                         <div class="mb-3">
+                                            <p class="fs-14px title2 mb-3">Search Bar</p>
+                                            <div class="d-flex align-item-center flex-wrap  gap-3 card-border p-3">
+                                                <form action="#" method="POST" class="searching-width-1" >
+                                                    <div class="searching1">
+                                                        <input type="search" class="form-control" placeholder="Search" title="Search for:">
+                                                    </div>
+                                                </form>
+
+                                                <form action="#" method="POST" class="searching-width-1" >
+                                                    <div class="searching1 left-search-submit-icon">
+                                                        <input type="search" class="form-control" placeholder="Search" title="Search for:">
+                                                        
+                                                        <button type="submit" class="search-submit-icon"><img src="assets/images/icons/search-gray-18.svg" alt=""></button>
+                                                    </div>
+                                                </form> 
+
+                                                <form action="#" method="POST" class="searching-width-1" >
+                                                    <div class="searching1">
+                                                        <input type="search" class="form-control arrow-hide" placeholder="Search" title="Search for:">
+                                                        
+                                                        <button type="submit" class="search-submit-icon"><img src="assets/images/icons/search-gray-18.svg" alt=""></button>
+                                                    </div>
+                                                </form>
+
+                                                <form action="#" method="POST" class="searching-width-1" >
+                                                    <div class="searching1 search-skin-submit">
+                                                        <input type="search" class="form-control" placeholder="Search" title="Search for:">
+                                                        
+                                                        <button type="submit" class="search-skin-submit-icon"><img src="assets/images/icons/search-white-18.svg" alt=""></button>
+                                                    </div>
+                                                </form>
+
+                                            </div>
+                                         </div>
+
+                                         <div class="mb-3">
+                                            <p class="fs-14px title2 mb-3">Card</p>
+                                            <div class="card-border p-3">
+                                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-3 ">
+                                                    <div class="col">
+                                                        <div class="single-card-item">
+                                                            <div class="single-card-img">
+                                                                <img src="assets/images/img/card-img.png" alt="img">
+                                                            </div>
+                                                            <div class="single-card-content">
+                                                                <h4 class="fs-16px title2 mb-1">Card</h4>
+                                                                <p class="fs-14px">Lorem Ipsum available, but the majority have suffered alteration in some form injected</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="single-card-item">
+                                                            <div class="single-card-img">
+                                                                <img src="assets/images/img/card-img.png" alt="img">
+                                                            </div>
+                                                            <div class="single-card-content">
+                                                                <h4 class="fs-16px title2 mb-1">Card</h4>
+                                                                <p class="fs-14px mb-12px">Lorem Ipsum available, but the majority have suffered alteration in some form injected</p>
+
+                                                                <a href="#" class="btn ad-btn-primary d-flex align-items-center cg-10px">
+                                                                    Read More
+                                                                    <span><i class="fa-solid fa-angle-right"></i></span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="single-card-item">
+                                                            <div class="single-card-content">
+                                                                <h4 class="fs-16px title2 mb-1">Card</h4>
+                                                                <p class="fs-14px mb-12px">Lorem Ipsum available, but the majority have suffered alteration in some form injected</p>
+
+                                                                <a href="#" class="btn ad-btn-primary d-flex align-items-center cg-10px">
+                                                                    Read More
+                                                                    <span><i class="fa-solid fa-angle-right"></i></span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="single-card-img radius-bottom">
+                                                                <img src="assets/images/img/card-img.png" alt="img">
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col">
+                                                        <div class="single-card-item">
+                                                            <div class="single-card-img">
+                                                                <img src="assets/images/img/card-img.png" alt="img">
+                                                            </div>
+                                                            <div class="single-card-content">
+                                                                <h4 class="fs-16px title2 mb-1">Card</h4>
+                                                                <p class="fs-14px mb-12px">Lorem Ipsum available, but the majority have suffered alteration in some form injected</p>
+
+                                                                <a href="#" class="btn read-more-transparent-btn d-flex align-items-center cg-10px fs-12px">
+                                                                    Read More
+                                                                    <span><i class="fa-solid fa-angle-right"></i></span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                         </div>
                                         
+
+                                         <div class="mb-3">
+                                            <p class="fs-14px title2 mb-3">Clipboard</p>
+                                            <div class="card-border p-3">
+                                                <div class="row row-cols-1 row-cols-md-2 g-3">
+                                                    <div class="col">
+                                                        <div class="input-group">
+                                                            <input id="clipboard1"
+                                                                   type="text"
+                                                                   class="form-control clipboard-control"
+                                                                   value="This is a sample static text string to copy!"
+                                                                   readonly
+                                                            >
+                                                            <button id="clipboard-btn1"
+                                                                    class="btn ad-btn-light-primary clipboard"
+                                                                    type="button"
+                                                                    data-clipboard-target="#clipboard1"
+                                                                    data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top"
+                                                                    title="Copy to Clipboard"
+                                                            >Copy</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="input-group">
+                                                            <input id="clipboard2"
+                                                                   type="text"
+                                                                   class="form-control clipboard-control"
+                                                                   value="This is a sample static text string to copy!"
+                                                                   readonly
+                                                            >
+                                                            <button id="clipboard-btn2"
+                                                                    class="btn ad-btn-primary"
+                                                                    type="button"
+                                                                    data-clipboard-target="#clipboard2"
+                                                                    data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top"
+                                                                    title="Copy to Clipboard"
+                                                            >Copy</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="input-group">
+                                                            <button id="clipboard-btn3"
+                                                                    class="btn ad-btn-light-primary clipboard border-left"
+                                                                    type="button"
+                                                                    data-clipboard-target="#clipboard3"
+                                                                    data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top"
+                                                                    title="Copy to Clipboard"
+                                                            >Copy</button>
+                                                            <input id="clipboard3"
+                                                                   type="text"
+                                                                   class="form-control clipboard-control"
+                                                                   value="This is a sample static text string to copy!"
+                                                                   readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="input-group">
+                                                            <button id="clipboard-btn4"
+                                                                    class="btn ad-btn-primary clipboard"
+                                                                    type="button"
+                                                                    data-clipboard-target="#clipboard4"
+                                                                    data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top"
+                                                                    title="Copy to Clipboard"
+                                                            >Copy</button>
+                                                            <input id="clipboard4"
+                                                                   type="text"
+                                                                   class="form-control clipboard-control"
+                                                                   value="This is a sample static text string to copy!"
+                                                                   readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="input-group">
+                                                            <input id="clipboard5"
+                                                                   type="text"
+                                                                   class="form-control clipboard-control border-right-none"
+                                                                   value="This is a sample static text string to copy!"
+                                                                   readonly
+                                                            >
+                                                            <button id="clipboard-btn5"
+                                                                class="btn ad-btn-outline-secondary clipboard"
+                                                                type="button"
+                                                                data-clipboard-target="#clipboard5"
+                                                                data-bs-toggle="tooltip"
+                                                                data-bs-placement="top"
+                                                                title="Copy to Clipboard"
+                                                            >
+                                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M18.1493 19.5208C17.8982 19.5881 17.6348 19.6483 17.3469 19.6944C16.8343 19.7904 16.2385 19.8465 15.6105 19.8595L13.8842 19.9079C9.14916 20.0482 7.05909 18.0822 6.91172 13.3594L6.77388 9.0585C6.7405 8.08394 6.79235 7.27288 6.93581 6.57186C7.67839 2.69766 10.9391 2.15524 13.3417 2.08086L15.0558 2.02535C17.4584 1.95097 19.1131 2.40827 20.2591 3.47813C21.3954 4.55058 21.9635 6.16867 22.0379 8.57129L22.1731 12.8625C22.2897 16.6204 21.0085 18.7547 18.1493 19.5208ZM11.1692 3.86391C9.55609 4.29614 8.71079 5.23698 8.40804 6.85031C8.29666 7.4392 8.24791 8.1459 8.27213 9.00904L8.40997 13.3099C8.52864 17.1915 9.95059 18.5187 13.8347 18.4097L15.561 18.3612C16.1163 18.347 16.6296 18.2923 17.0843 18.2119C19.7718 17.7713 20.7775 16.2698 20.6652 12.9145L20.53 8.62334C20.4651 6.64263 20.0578 5.35416 19.2271 4.5725C18.3965 3.79085 17.0859 3.45874 15.0956 3.52619L13.3815 3.5817C12.528 3.60334 11.7874 3.69827 11.1692 3.86391Z" fill="#8992A2" />
+                                                                <path d="M10.8733 23.388C8.36449 23.9455 6.42385 22.7728 4.68197 19.7747L2.56116 16.1318C0.204425 12.0726 0.89714 9.3355 4.85961 6.97587L6.28948 6.12689C6.7618 5.85527 7.11825 5.66148 7.44668 5.526C7.70678 5.4057 8.01414 5.45197 8.23082 5.64338C8.44751 5.83479 8.54297 6.12605 8.48317 6.41015C8.34627 6.99261 8.26954 7.70753 8.26935 8.5825L8.23692 12.9539C8.20191 16.8989 9.57134 18.3132 13.4598 18.3864L15.1881 18.419C15.7439 18.4309 16.2594 18.3997 16.7172 18.3396C17.0362 18.2999 17.3386 18.4619 17.4948 18.75C17.6413 19.0404 17.5947 19.384 17.3806 19.6191C16.8356 20.2089 16.1092 20.7662 15.1592 21.3314L13.7315 22.1903C12.6883 22.7971 11.7518 23.1927 10.8733 23.388ZM6.80048 7.59654L5.63384 8.29327C2.40253 10.2092 1.94335 12.0611 3.85564 15.365L5.97645 19.0079C7.89629 22.2997 9.72598 22.7889 12.9573 20.8729L14.385 20.014C14.4391 19.9812 14.4835 19.9505 14.5377 19.9176L13.4478 19.8994C8.70714 19.8176 6.69488 17.7233 6.73449 12.9233L6.76692 8.55183C6.76467 8.21903 6.77438 7.89398 6.80048 7.59654Z" fill="#8992A2" />
+                                                               </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="input-group inner-button">
+                                                            <input id="clipboard6"
+                                                                   type="text"
+                                                                   class="form-control clipboard-control"
+                                                                   value="This is a sample static text string to copy!"
+                                                                   readonly
+                                                            >
+                                                            <button id="clipboard-btn6"
+                                                                class="btn ad-btn-light-secondary clipboard ad-icon-btn "
+                                                                type="button"
+                                                                data-clipboard-target="#clipboard6"
+                                                                data-bs-toggle="tooltip"
+                                                                data-bs-placement="top"
+                                                                title="Copy to Clipboard"
+                                                            >
+                                                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M18.1493 19.5208C17.8982 19.5881 17.6348 19.6483 17.3469 19.6944C16.8343 19.7904 16.2385 19.8465 15.6105 19.8595L13.8842 19.9079C9.14916 20.0482 7.05909 18.0822 6.91172 13.3594L6.77388 9.0585C6.7405 8.08394 6.79235 7.27288 6.93581 6.57186C7.67839 2.69766 10.9391 2.15524 13.3417 2.08086L15.0558 2.02535C17.4584 1.95097 19.1131 2.40827 20.2591 3.47813C21.3954 4.55058 21.9635 6.16867 22.0379 8.57129L22.1731 12.8625C22.2897 16.6204 21.0085 18.7547 18.1493 19.5208ZM11.1692 3.86391C9.55609 4.29614 8.71079 5.23698 8.40804 6.85031C8.29666 7.4392 8.24791 8.1459 8.27213 9.00904L8.40997 13.3099C8.52864 17.1915 9.95059 18.5187 13.8347 18.4097L15.561 18.3612C16.1163 18.347 16.6296 18.2923 17.0843 18.2119C19.7718 17.7713 20.7775 16.2698 20.6652 12.9145L20.53 8.62334C20.4651 6.64263 20.0578 5.35416 19.2271 4.5725C18.3965 3.79085 17.0859 3.45874 15.0956 3.52619L13.3815 3.5817C12.528 3.60334 11.7874 3.69827 11.1692 3.86391Z" fill="#8992A2" />
+                                                                <path d="M10.8733 23.388C8.36449 23.9455 6.42385 22.7728 4.68197 19.7747L2.56116 16.1318C0.204425 12.0726 0.89714 9.3355 4.85961 6.97587L6.28948 6.12689C6.7618 5.85527 7.11825 5.66148 7.44668 5.526C7.70678 5.4057 8.01414 5.45197 8.23082 5.64338C8.44751 5.83479 8.54297 6.12605 8.48317 6.41015C8.34627 6.99261 8.26954 7.70753 8.26935 8.5825L8.23692 12.9539C8.20191 16.8989 9.57134 18.3132 13.4598 18.3864L15.1881 18.419C15.7439 18.4309 16.2594 18.3997 16.7172 18.3396C17.0362 18.2999 17.3386 18.4619 17.4948 18.75C17.6413 19.0404 17.5947 19.384 17.3806 19.6191C16.8356 20.2089 16.1092 20.7662 15.1592 21.3314L13.7315 22.1903C12.6883 22.7971 11.7518 23.1927 10.8733 23.388ZM6.80048 7.59654L5.63384 8.29327C2.40253 10.2092 1.94335 12.0611 3.85564 15.365L5.97645 19.0079C7.89629 22.2997 9.72598 22.7889 12.9573 20.8729L14.385 20.014C14.4391 19.9812 14.4835 19.9505 14.5377 19.9176L13.4478 19.8994C8.70714 19.8176 6.69488 17.7233 6.73449 12.9233L6.76692 8.55183C6.76467 8.21903 6.77438 7.89398 6.80048 7.59654Z" fill="#8992A2" />
+                                                               </svg>
+                                                            </button>
+
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <p class="fs-14px title2 mb-3">Typography</p>
+                                            <div class="card-border p-3">
+                                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+                                                    <div class="col">
+                                                        <h1 class="fs-40px darkColor fw-semibold">Display 1</h1>
+                                                        <h2  class="fs-30px darkColor fw-semibold">Display 1</h2>
+                                                        <h3 class="fs-26px darkColor fw-semibold">Display 1</h3>
+                                                        <h4 class="fs-20px darkColor fw-semibold">Display 1</h4>
+                                                        <h5 class="fs-18px darkColor fw-semibold">Display 1</h5>
+                                                        <h6 class="fs-16px darkColor fw-semibold">Display 1</h6>
+                                                        <p class="fs-14px darkColor fw-semibold">Display 1</p>
+                                                        <p class="fs-12px darkColor fw-semibold">Display 1</p>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h1 class="fs-40px skinColor fw-semibold">Display 1</h1>
+                                                        <h2  class="fs-30px skinColor fw-semibold">Display 1</h2>
+                                                        <h3 class="fs-26px skinColor fw-semibold">Display 1</h3>
+                                                        <h4 class="fs-20px skinColor fw-semibold">Display 1</h4>
+                                                        <h5 class="fs-18px skinColor fw-semibold">Display 1</h5>
+                                                        <h6 class="fs-16px skinColor fw-semibold">Display 1</h6>
+                                                        <p class="fs-14px skinColor fw-semibold">Display 1</p>
+                                                        <p class="fs-12px skinColor fw-semibold">Display 1</p>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h1 class="fs-40px grayColor fw-semibold">Display 1</h1>
+                                                        <h2  class="fs-30px grayColor fw-semibold">Display 1</h2>
+                                                        <h3 class="fs-26px grayColor fw-semibold">Display 1</h3>
+                                                        <h4 class="fs-20px grayColor fw-semibold">Display 1</h4>
+                                                        <h5 class="fs-18px grayColor fw-semibold">Display 1</h5>
+                                                        <h6 class="fs-16px grayColor fw-semibold">Display 1</h6>
+                                                        <p class="fs-14px grayColor fw-semibold">Display 1</p>
+                                                        <p class="fs-12px grayColor fw-semibold">Display 1</p>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h1 class="fs-40px grayColor2 fw-semibold">Display 1</h1>
+                                                        <h2  class="fs-30px grayColor2 fw-semibold">Display 1</h2>
+                                                        <h3 class="fs-26px grayColor2 fw-semibold">Display 1</h3>
+                                                        <h4 class="fs-20px grayColor2 fw-semibold">Display 1</h4>
+                                                        <h5 class="fs-18px grayColor2 fw-semibold">Display 1</h5>
+                                                        <h6 class="fs-16px grayColor2 fw-semibold">Display 1</h6>
+                                                        <p class="fs-14px grayColor2 fw-semibold">Display 1</p>
+                                                        <p class="fs-12px grayColor2 fw-semibold">Display 1</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="mb-3">
+                                            <p class="fs-14px title2 mb-3">File Browse</p>
+                                            <div class="card-border p-3">
+                                                <div class="row row-cols-1 row-cols-md-2 g-4">
+                                                    <div class="col">
+                                                        <div class="mb-3">
+                                                            <input class="form-control form-control-file" type="file" id="formFile">
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <input class="form-control form-control-file form-control-file2" type="file" id="formFile">
+                                                        </div> 
+                                                        <div>
+                                                            <input class="form-control form-control-file form-control-file3" type="file" id="formFile">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="mb-3">
+                                            <p class="fs-14px title2 mb-3">Date Picker</p>
+                                            <div class="card-border p-3">
+                                                <div class="row row-cols-1 row-cols-md-2 g-4">
+                                                    <div class="col">
+                                                        <!-- datepicker-autoclose -->
+                                                        <form action="#" method="POST">
+                                                            <div class="datepicker-area">
+                                                                <input type="text" class="datepicker-autoclose form-control ad-form-control" placeholder="July 2023 (Current)">
+                                                                <span><i class="fa-solid fa-angle-down"></i></span>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+
+                                                    <div class="col">
+                                                        <!-- datepicker range plugin-->
+                                                        <form action="#" method="POST">
+
+                                                            <input type="text" class="form-control ad-form-control input-pointer" name="basic" id="basic" value="08/01/2024 - 08/20/2024" />
+                                                        </form>
+                                                    </div>
+                                                                                                      
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="mb-3">
+                                            <p class="fs-14px title2 mb-3">Date Picker</p>
+                                            <div class="card-border p-3">
+                                                <div id='calendar-container'>
+                                                    <div class="add-event-area mb-3 d-flex justify-content-end">
+                                                        <button type="button" class="btn ad-btn-primary d-flex align-items-center cg-10px">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                                                <path d="M13.125 6.125H7.875V0.875C7.875 0.391754 7.48325 0 7 0C6.51675 0 6.125 0.391754 6.125 0.875V6.125H0.875C0.391754 6.125 0 6.51675 0 7C0 7.48325 0.391754 7.875 0.875 7.875H6.125V13.125C6.125 13.6082 6.51675 14 7 14C7.48325 14 7.875 13.6082 7.875 13.125V7.875H13.125C13.6082 7.875 14 7.48325 14 7C14 6.51675 13.6082 6.125 13.125 6.125Z" fill="white"/>
+                                                              </svg>
+                                                            <span>Add Event</span>
+                                                        </button>
+                                                    </div>
+                                                    <div id='calendar'></div>
+                                                  </div>
+                                            </div>
+                                        </div>
+
+
                                     </div>
                                 </div>
                             </div>
@@ -2824,156 +3181,107 @@
     <!-- Admin Main Top Area End -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/clipboard-js/clipboard.min.js"></script>
     <script src="assets/vendors/nice-select/jquery.nice-select.min.js"></script>
     <script src="assets/vendors/select2/select2.min.js"></script>
+    <!-- datepicker-autoclose js-->
+    <script src="assets/vendors/datepicker/bootstrap-datepicker.min.js"></script>
+    <!-- datepicker range plugin -->
+    <script src="assets/vendors/datepicker-plugin/moment.min.js"></script>
+    <script src="assets/vendors/datepicker-plugin/daterangepicker.js"></script>
+
+    <!-- full calender js -->
+    <script src='assets/vendors/fullcalendar/packages/core/main.js'></script>
+    <script src='assets/vendors/fullcalendar/packages/interaction/main.js'></script>
+    <script src='assets/vendors/fullcalendar/packages/daygrid/main.js'></script>
+    <script src='assets/vendors/fullcalendar/packages/timegrid/main.js'></script>
+    <script src='assets/vendors/fullcalendar/packages/list/main.js'></script>
+
+   
     <script src="assets/js/script.js"></script>
 
 
     <script>
-        
-    // jquery product-container x
-    $(document).ready(function() {
-        $('.alert-close').on('click', function(){
-            $('.ad-alert').hide();
-        }); 
-    }); 
+
+        // clipboard1
+        let btn = document.getElementById('clipboard-btn1');
+        let clipboard = new ClipboardJS(btn);
     
-    $(document).ready(function() {
-        $('.rich-alert-close').on('click', function(){
-            $('.rich-alert').hide();
-        }); 
-    });   
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+    
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
 
 
-    $(document).ready(function() {
-        $('.toaster-close').on('click', function(){
-            $('.toaster1').hide();
-        }); 
-    });
+        // clipboard2
+        let btn2 = document.getElementById('clipboard-btn2');
+        let clipboard2 = new ClipboardJS(btn2);
+    
+        clipboard2.on('success', function(e) {
+            console.log(e);
+        });
+    
+        clipboard2.on('error', function(e) {
+            console.log(e);
+        });
 
-    $(document).ready(function() {
-        $('.toaster-close2').on('click', function(){
-            $('.toaster2').hide();
-        }); 
-    });
+    // clipboard3
+        let btn3 = document.getElementById('clipboard-btn3');
+        let clipboard3 = new ClipboardJS(btn3);
+    
+        clipboard3.on('success', function(e) {
+            console.log(e);
+        });
+    
+        clipboard3.on('error', function(e) {
+            console.log(e);
+        });
+
+    // clipboard3
+        let btn4 = document.getElementById('clipboard-btn4');
+        let clipboard4 = new ClipboardJS(btn4);
+    
+        clipboard4.on('success', function(e) {
+            console.log(e);
+        });
+    
+        clipboard4.on('error', function(e) {
+            console.log(e);
+        });
+
+
+        // clipboard5
+        let btn5 = document.getElementById('clipboard-btn5');
+        let clipboard5 = new ClipboardJS(btn5);
+    
+        clipboard5.on('success', function(e) {
+            console.log(e);
+        });
+    
+        clipboard5.on('error', function(e) {
+            console.log(e);
+        });
+
+        // clipboard5
+        let btn6 = document.getElementById('clipboard-btn6');
+        let clipboard6 = new ClipboardJS(btn6);
+    
+        clipboard6.on('success', function(e) {
+            console.log(e);
+        });
+    
+        clipboard6.on('error', function(e) {
+            console.log(e);
+        });
+
 
 
     </script>
 
 
-<script> 
-  
-   
-    $("#progress-bar1").animate({ 
-            width: "50%", 
-    }, 3000); 
-
-    $("#progress-bar2").animate({ 
-            width: "60%", 
-    }, 3000); 
-
-    $("#progress-bar3").animate({ 
-            width: "70%", 
-    }, 3000); 
-
-    $("#progress-bar4").animate({ 
-            width: "80%", 
-    }, 3000); 
-
-    $("#progress-bar5").animate({ 
-            width: "50%", 
-    }, 3000); 
-
-    $("#progress-bar6").animate({ 
-            width: "60%", 
-    }, 3000); 
-
-    $("#progress-bar7").animate({ 
-            width: "70%", 
-    }, 3000); 
-
-    $("#progress-bar8").animate({ 
-            width: "80%", 
-    }, 3000); 
-
-    $("#progress-bar9").animate({ 
-            width: "50%", 
-    }, 3000); 
-
-    $("#progress-bar10").animate({ 
-            width: "60%", 
-    }, 3000); 
-
-    $("#progress-bar11").animate({ 
-            width: "70%", 
-    }, 3000); 
-
-    $("#progress-bar12").animate({ 
-            width: "80%", 
-    }, 3000); 
-
-    $("#progress-bar13").animate({ 
-            width: "50%", 
-    }, 3000); 
-
-    $("#progress-bar14").animate({ 
-            width: "60%", 
-    }, 3000); 
-
-    $("#progress-bar15").animate({ 
-            width: "70%", 
-    }, 3000); 
-
-    $("#progress-bar16").animate({ 
-            width: "80%", 
-    }, 3000);
-
-    $("#progress-bar17").animate({ 
-            width: "50%", 
-    }, 3000); 
-
-    $("#progress-bar18").animate({ 
-            width: "60%", 
-    }, 3000); 
-
-    $("#progress-bar19").animate({ 
-            width: "70%", 
-    }, 3000); 
-
-    $("#progress-bar20").animate({ 
-            width: "80%", 
-    }, 3000); 
-    $("#progress-bar21").animate({ 
-            width: "90%", 
-    }, 3000); 
-
-
-</script> 
-
-
-
-<script>
-    $(function () {
-
-        $('#placement-top').tooltip({
-            'placement': 'top',
-        });
-
-        $('#placement-bottom').tooltip({
-            'placement': 'bottom',
-        });
-
-        $('#placement-right').tooltip({
-            'placement': 'right',
-        });
-
-        $('#placement-left').tooltip({
-            'placement': 'left',
-        });
-
-
-    })
-</script>
 
 
 

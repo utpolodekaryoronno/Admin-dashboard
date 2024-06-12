@@ -126,6 +126,18 @@ body{
     font-style: normal;
     font-weight: 400;
 }
+.skinColor{
+    color: var(--skinColor) !important;
+}
+.darkColor{
+    color: var(--darkColor) !important;
+}
+.grayColor{
+    color: var(--grayColor) !important;
+}
+.grayColor2{
+    color: var(--grayColor2) !important;
+}
 ul,ol{
     margin: 0;
     padding: 0;
@@ -361,8 +373,14 @@ span[class="fi-rr-"]:before {
 .fs-20px{
     font-size: 20px !important;
 }
+.fs-26px{
+    font-size: 26px !important;
+}
 .fs-30px{
     font-size: 30px !important;
+}
+.fs-40px{
+    font-size: 40px !important;
 }
 
 
@@ -3460,6 +3478,235 @@ span[class="fi-rr-"]:before {
 .btn-transparent:hover{
     color: var(--darkColor);
 }
+
+
+
+
+/* Desktop Search */
+.searching-width-1{
+    max-width: 400px;
+    width: 100%;
+}
+
+.searching1 .form-control {
+    padding: 12.5px 16px;
+    border-radius: 12px;
+    transition: width 400ms ease, background 400ms ease;
+    color: var(--grayColor);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    border: 1px solid var(--borderColor);
+    background-color: var(--whiteColor);
+    width: 100%;
+}
+.searching1 .form-control:focus {
+    border-color: var(--skinColor);
+    color: var(--grayColor);
+}
+.searching1{
+    position: relative;
+}
+.searching1 .search-submit-icon{
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+}
+.searching1 .search-submit-icon img{
+    height: 18px;
+    width: 18px;
+}
+
+
+.left-search-submit-icon .form-control{
+    padding-left: 38px;
+}
+.left-search-submit-icon .search-submit-icon{
+    position: absolute;
+    right: calc(100% - 32px);
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+}
+
+
+.searching1 .search-skin-submit-icon{
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--skinColor) ;
+    height: 100%;
+    width: 48px;
+    border-radius: 0px 12px 12px 0px;
+    outline: 1px solid var(--skinColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-skin-submit .form-control{
+    padding-right: 55px;
+}
+
+
+.form-control.arrow-hide[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+/* card  */
+.single-card-item{
+    border: 1px solid var(--borderColor);
+    border-radius: 6px;
+}
+.single-card-img img{
+    border-radius: 6px 6px 0px 0px;
+    width: 100%;
+}
+.radius-bottom img{
+    border-radius: 0px 0px 6px 6px !important;
+}
+.single-card-content{
+    padding: 12px;
+}
+.read-more-transparent-btn{
+    font-weight: 500;
+    color: var(--darkColor);
+    padding: 0px;
+}
+.clipboard-control{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--grayColor);
+    padding: 14px 16px;
+    border: 1px solid var(--borderColor);
+}
+
+.ad-btn-light-primary.clipboard{
+    border: 1px solid var(--borderColor) !important;
+    border-left: none !important;
+}
+.ad-btn-outline-secondary.clipboard{
+    border-left: 1px solid transparent;
+}
+.ad-btn-outline-secondary.clipboard:hover{
+    border-left: 1px solid var(--skinColor);
+}
+.border-right-none{
+    border-right: none !important;
+}
+.clipboard-control:focus{
+    border-color: var(--borderColor);
+}
+.clipboard.border-left{
+    border-left: 1px solid var(--borderColor) !important;
+}
+
+.input-group.inner-button>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    margin-left: -40px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.input-group.inner-button{
+    align-items: center;
+}
+.input-group .btn{
+    z-index: 9;
+}
+.clipboard.ad-icon-btn{
+    height: 30px;
+    width: 30px;
+}
+.input-group.inner-button .form-control.clipboard-control{
+    margin-right: 7px;
+    border-radius: 6px !important;
+}
+.daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
+    color: var(--grayColor);
+}
+.daterangepicker .drp-buttons .btn-primary{
+    background: var(--skinColor);
+    color: var(--whiteColor);
+}
+.daterangepicker .drp-buttons .btn-default{
+    background: var(--grayLight);
+    color: var(--blackColor);
+}
+.daterangepicker td.active, .daterangepicker td.active:hover {
+    background-color: var(--skinColor);
+    border-color: transparent;
+    color: var(--whiteColor);
+}
+.input-pointer{
+    cursor: pointer;
+}
+.daterangepicker td.in-range {
+    background-color: var(--skinColorLight);
+    border-color: transparent;
+    color: var(--blackColor);
+    border-radius: 0;
+}
+.daterangepicker td.end-date.in-range{
+    background: var(--skinColor);
+    border-radius: 0px 6px 6px 0px;
+    color: var(--whiteColor);
+}
+.daterangepicker th.month {
+    color: var(--grayColor);
+}
+.daterangepicker .calendar-table .next span, .daterangepicker .calendar-table .prev span {
+    border-color: var(--blackColor);
+}
+.daterangepicker .calendar-table .next:hover,
+.daterangepicker .calendar-table .prev:hover{
+   background: var(--skinColor);
+}
+.daterangepicker .calendar-table .next:hover span,
+.daterangepicker .calendar-table .prev:hover span{
+   border-color: var(--whiteColor) !important;
+}
+
+
+
+/* fullcalender */
+.fc-button-primary {
+    color: var(--whiteColor);
+    background-color: var(--skinColor);
+    border-color: var(--skinColor);
+}
+.fc-button-primary:hover {
+    color: var(--whiteColor);
+    background-color: var(--skinColorHover);
+    border-color: var(--skinColor);
+}
+.fc-button {
+    color: #fff;
+    background-color: var(--skinColor);
+    border-color: var(--skinColor);
+}
+.fc-button-primary:not(:disabled):active, .fc-button-primary:not(:disabled).fc-button-active {
+    color: var(--whiteColor);
+    background-color: var(--skinColorHover);
+    border-color: var(--skinColor);
+}
+.fc-unthemed th, .fc-unthemed td, .fc-unthemed thead, .fc-unthemed tbody, .fc-unthemed .fc-divider, .fc-unthemed .fc-row, .fc-unthemed .fc-content, .fc-unthemed .fc-popover, .fc-unthemed .fc-list-view, .fc-unthemed .fc-list-heading td {
+    border-color: var(--borderColor);
+}
+.fc-event .fc-content {
+    color: var(--whiteColor);
+}
+.fc-ltr .fc-dayGrid-view .fc-day-top .fc-day-number {
+    float: none;
+}
+.fc-event, .fc-event-dot {
+    background-color: var(--skinColor);
+}
+.fc-event{
+    border: 1px solid var(--skinColor);
+}
+
 /* All ui element Css End ***
 *********************/
 
@@ -3843,7 +4090,7 @@ span[class="fi-rr-"]:before {
     font-size: 14px;
     line-height: 14px;
     border: 1px solid var(--borderColor);
-    background-color: #f1f4f5;
+    background-color: var(--whiteColor);
     max-width: 342px;
     width: 100%;
 }
@@ -3854,13 +4101,14 @@ span[class="fi-rr-"]:before {
 .header-desktop-search{
     position: relative;
 }
-.header-desktop-search .desk-search-icon{
+.header-desktop-search .gray-search-icon{
     position: absolute;
     right: 16px;
     top: 50%;
     transform: translateY(-50%);
+    background: transparent;
 }
-.header-desktop-search .desk-search-icon img{
+.header-desktop-search .gray-search-icon img{
     height: 18px;
     width: 18px;
 }
@@ -4797,9 +5045,17 @@ textarea.ad-form-textarea{
     line-height: 20px; 
     color: var(--grayColor);
 }
+.form-control-file2[type=file]::file-selector-button {
+    padding: 12px 12px;
+}
+.form-control-file3[type=file]::file-selector-button {
+    padding: 16px 12px;
+}
+
 .form-control-file[type=file]:hover{
     border: 1px solid var(--skinColor);
 }
+
 .note-editor.note-airframe .note-editing-area, .note-editor.note-frame .note-editing-area {
     background: var(--whiteColor);
 }
@@ -6156,6 +6412,9 @@ textarea.ad-form-textarea{
     right: 15px;
     top: 50%;
     transform: translateY(-50%);
+}
+.datepicker-autoclose{
+    cursor: pointer;
 }
 .datepicker {
     padding: 20px 15px !important;

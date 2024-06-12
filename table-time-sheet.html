@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/vendors/nice-select/nice-select.css">
     <!-- Select2 -->
     <link rel="stylesheet" href="assets/vendors/select2/select2.min.css">
-    <!-- datepicker -->
+    <!-- datepicker-autoclose -->
     <link rel="stylesheet" href="assets/vendors/datepicker/bootstrap-datepicker.min.css">
     <!-- Custom Css -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -228,7 +228,7 @@
                         <div class="header-desktop-search">
                             <input type="search" class="form-control" id="desk-search-id" placeholder="Search …" title="Search for:">
                             
-                            <button type="submit" class="desk-search-icon"><img src="assets/images/icons/search-dark-18.svg" alt=""></button>
+                            <button type="submit" class="gray-search-icon"><img src="assets/images/icons/search-gray-18.svg" alt=""></button>
                         </div>
                         <!-- For Mobile Search -->
                         <div class="header-mobile-search">
@@ -431,15 +431,15 @@
                             <div class="col-lg-12">
                                 
                                 <div class="mb-3 flex-wrap">
-                                    <h4 class="title fs-18px mb-2">All Categories</h4>
-                                    <p class="sub-title fs-12px">Home / Categories</p>
+                                    <h4 class="title fs-18px mb-2">Work Timesheet</h4>
+                                    <p class="sub-title fs-12px">Home / Work timesheet</p>
                                 </div>
 
                                 
                                 <!-- Table -->
                                 <div class="dashboard-table-wrap">
                                     <form action="" class="table-filter-form">
-                                        <div class="table-title-option-area">
+                                        <div class="table-title-option-area mb-3">
                                             <div class="datepicker-area">
                                                 <input type="text" class="datepicker-autoclose form-control ad-form-control" placeholder="July 2023 (Current)">
                                                 <span><i class="fa-solid fa-angle-down"></i></span>
@@ -455,188 +455,119 @@
 
                                     </form>
                                 
-                                    <div class="accordion" id="accordionExample">
+                                    <!-- basic-1-accordion -->
+                                    <div class="accordion basic-1-accordion" id="accordionExample">
                                         <div class="accordion-item">
                                           <h2 class="accordion-header" id="headingOne">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                              Accordion Item #1
+                                            <button class="accordion-button fs-14px title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                03 July , Thursday
                                             </button>
                                           </h2>
                                           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
-                                              <strong>This is the first item's accordion body.</strong>
-                                              It is hidden by default, until the collapse plugin
-                                              adds the appropriate classes that we use to style
-                                              each element. These classes control the overall
-                                              appearance, as well as the showing and hiding via
-                                              CSS transitions. You can modify any of this with
-                                              custom CSS or overriding our default variables. It's
-                                              also worth noting that just about any HTML can go
-                                              within the
-                                              <code>.accordion-body</code>, though the transition
-                                              does limit overflow.
+                                                <div class="fixed-layout-table">
+                                                    <div class="table-responsive">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th width="25%" class="fs-12px title">Start time</th>
+                                                                    <th width="25%" class="fs-12px title">End time</th>
+                                                                    <th width="25%" class="fs-12px title">Task</th>
+                                                                    <th width="25%" class="fs-12px title">Description/Note</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="fs-12px title">10:00 AM</td>
+                                                                    <td class="fs-12px title">10:00 AM</td>
+                                                                    <td class="fs-12px title">Task 1</td>
+                                                                    <td >
+                                                                        <div class="time-sheet-description">
+                                                                           <p class="fs-12px fw-medium"> Awesome site on the top Advertising a business online includes they the top assembling.</p>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
                                             </div>
                                           </div>
                                         </div>
                                         <div class="accordion-item">
                                           <h2 class="accordion-header" id="headingTwo">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                              Accordion Item #2
+                                            <button class="accordion-button collapsed fs-14px title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                03 July , Thursday
                                             </button>
                                           </h2>
                                           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
-                                              <strong>This is the second item's accordion body.</strong>
-                                              It is hidden by default, until the collapse plugin
-                                              adds the appropriate classes that we use to style
-                                              each element. These classes control the overall
-                                              appearance, as well as the showing and hiding via
-                                              CSS transitions. You can modify any of this with
-                                              custom CSS or overriding our default variables. It's
-                                              also worth noting that just about any HTML can go
-                                              within the
-                                              <code>.accordion-body</code>, though the transition
-                                              does limit overflow.
+                                                <div class="fixed-layout-table">
+                                                    <div class="table-responsive">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th width="25%" class="fs-12px title">Start time</th>
+                                                                    <th width="25%" class="fs-12px title">End time</th>
+                                                                    <th width="25%" class="fs-12px title">Task</th>
+                                                                    <th width="25%" class="fs-12px title">Description/Note</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="fs-12px title">10:00 AM</td>
+                                                                    <td class="fs-12px title">10:00 AM</td>
+                                                                    <td class="fs-12px title">Task 1</td>
+                                                                    <td >
+                                                                        <div class="time-sheet-description">
+                                                                           <p class="fs-12px fw-medium"> Awesome site on the top Advertising a business online includes they the top assembling.</p>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
                                             </div>
                                           </div>
                                         </div>
                                         <div class="accordion-item">
                                           <h2 class="accordion-header" id="headingThree">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                              Accordion Item #3
+                                            <button class="accordion-button collapsed fs-14px title" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                03 July , Thursday
                                             </button>
                                           </h2>
                                           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
-                                              <strong>This is the third item's accordion body.</strong>
-                                              It is hidden by default, until the collapse plugin
-                                              adds the appropriate classes that we use to style
-                                              each element. These classes control the overall
-                                              appearance, as well as the showing and hiding via
-                                              CSS transitions. You can modify any of this with
-                                              custom CSS or overriding our default variables. It's
-                                              also worth noting that just about any HTML can go
-                                              within the
-                                              <code>.accordion-body</code>, though the transition
-                                              does limit overflow.
+                                                <div class="fixed-layout-table">
+                                                    <div class="table-responsive">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th width="25%" class="fs-12px title">Start time</th>
+                                                                    <th width="25%" class="fs-12px title">End time</th>
+                                                                    <th width="25%" class="fs-12px title">Task</th>
+                                                                    <th width="25%" class="fs-12px title">Description/Note</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="fs-12px title">10:00 AM</td>
+                                                                    <td class="fs-12px title">10:00 AM</td>
+                                                                    <td class="fs-12px title">Task 1</td>
+                                                                    <td >
+                                                                        <div class="time-sheet-description">
+                                                                           <p class="fs-12px fw-medium"> Awesome site on the top Advertising a business online includes they the top assembling.</p>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
                                             </div>
                                           </div>
                                         </div>
-                                      </div>
-
-                                      
-                                    <div class="table-responsive dashboard-table-responsive mt-4 mb-2">
-                                        <table class="table dashboard-table dashboard-table-1 dashboard-table-2">
-                                            <thead>
-                                              <tr>
-                                                <th scope="col">Number</th>
-                                                <th scope="col">name</th>
-                                                <th scope="col">Action</th>
-                                              </tr>
-                                            </thead>
-                                            <tbody>
-                                              <tr>
-                                                <td>
-                                                    <div class="form-check dtable-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="dcheck1" checked>
-                                                        <label class="form-check-label" for="dcheck1">
-                                                            01
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td>Devid Warnar</td>
-                                                <td>
-                                                    <div class="d-flex justify-content-center">
-                                                        <div class="dropdown ad-icon-dropdown">
-                                                            <button class="btn btn-secondary dropdown-toggle rotate-icon" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="fa-solid fa-ellipsis-vertical"></i>                        
-                                                            </button>
-                                                            <ul class="dropdown-menu dropdown-menu-end">
-                                                            <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                            <li><a class="dropdown-item" href="#">Delete</a></li>
-                                                            <li><a class="dropdown-item" href="#">Ben</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                              </tr>
-                                              <tr>
-                                                <td>
-                                                    <div class="form-check dtable-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="dcheck2">
-                                                        <label class="form-check-label" for="dcheck2">
-                                                            02
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td>Jenny Wilson</td>
-                                                <td>
-                                                    <div class="d-flex justify-content-center">
-                                                        <div class="dropdown ad-icon-dropdown">
-                                                            <button class="btn btn-secondary dropdown-toggle rotate-icon" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="fa-solid fa-ellipsis-vertical"></i>                        
-                                                            </button>
-                                                            <ul class="dropdown-menu dropdown-menu-end">
-                                                            <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                            <li><a class="dropdown-item" href="#">Delete</a></li>
-                                                            <li><a class="dropdown-item" href="#">Ben</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                              </tr>
-                                              <tr>
-                                                <td>
-                                                    <div class="form-check dtable-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="dcheck3">
-                                                        <label class="form-check-label" for="dcheck3">
-                                                            03
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td>Bessie Cooper</td>
-                                                <td>
-                                                    <div class="d-flex justify-content-center">
-                                                        <div class="dropdown ad-icon-dropdown">
-                                                            <button class="btn btn-secondary dropdown-toggle rotate-icon" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="fa-solid fa-ellipsis-vertical"></i>                        
-                                                            </button>
-                                                            <ul class="dropdown-menu dropdown-menu-end">
-                                                            <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                            <li><a class="dropdown-item" href="#">Delete</a></li>
-                                                            <li><a class="dropdown-item" href="#">Ben</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                              </tr>
-                                              <tr>
-                                                <td>
-                                                    <div class="form-check dtable-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="dcheck4">
-                                                        <label class="form-check-label" for="dcheck4">
-                                                            04
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td>Kristin Watson</td>
-                                                <td>
-                                                    <div class="d-flex justify-content-center">
-                                                        <div class="dropdown ad-icon-dropdown">
-                                                            <button class="btn btn-secondary dropdown-toggle rotate-icon" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                                <i class="fa-solid fa-ellipsis-vertical"></i>                        
-                                                            </button>
-                                                            <ul class="dropdown-menu dropdown-menu-end">
-                                                            <li><a class="dropdown-item" href="#">Edit</a></li>
-                                                            <li><a class="dropdown-item" href="#">Delete</a></li>
-                                                            <li><a class="dropdown-item" href="#">Ben</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                              </tr>
-                                            </tbody>
-                                        </table>
                                     </div>
                                   
                                 </div>
@@ -654,6 +585,7 @@
     <script src="assets/vendors/select2/select2.min.js"></script>
     <script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
     <script src="assets/vendors/chart-js/chart.js"></script>
+    <!-- datepicker-autoclose js  -->
     <script src="assets/vendors/datepicker/bootstrap-datepicker.min.js"></script>
     <script src="assets/js/script.js"></script>
 
